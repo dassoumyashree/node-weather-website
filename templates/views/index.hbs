@@ -1,0 +1,36 @@
+{{!-- rendering using handlebars and express --}}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+     {{!-- <script src="/js/app.js"></script>//the script is running before everything below is rendered, before the form 
+    is even parsed --}}
+
+</head>
+
+<body>
+    {{!-- instead of hard coding, its going to be provided by node js to make it dynamic --}}
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+    {{!-- <h1>{{title}}</h1>  --}}
+    {{>footer}}
+    {{!-- <p>Created by {{name}}</p> --}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

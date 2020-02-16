@@ -1,0 +1,77 @@
+/* auto evenly distributes the space on left and right */
+/* margin outside the box, padding inside the box */
+
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px; 
+    margin: 0 auto; 
+    padding: 0 16px;
+
+    /* flexbox is a different way to layout our items.
+    enable the flexbox */
+    display: flex;
+    /* everything will go from top to bottom if set column, for row L to R*/
+    flex-direction: column; 
+    /* body to take up entire browser height */
+    /* vh - view port height .. 100vh means 100% of the view port height*/
+    min-height: 100vh;
+}
+
+.main-content {
+    /* tells the flexboxthat the main-content should take up all the left over space */
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+    /* text-decoration: underline; */
+}
+
+/* class selector */
+.portrait {
+    width: 250px;
+
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+
+
+/* h1 {
+    color: grey;
+}
+img {
+    width: 250px;
+
+} */
