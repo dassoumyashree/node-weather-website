@@ -14,9 +14,6 @@
 
 
 
-console.log('Client side java script file is loaded!')
-
-
 //select the element from our html document that we're trying to work with
 const weatherForm = document.querySelector('form') //js representation of the html element (1st element of its kind)
 const search = document.querySelector('input')
