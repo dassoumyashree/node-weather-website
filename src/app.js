@@ -9,6 +9,8 @@ const forecast = require('./utils/forecast')
 
 //to generate a new instance of the application
 const app = express()
+const port = process.env.PORT || 3000 //extract the value that heroku provides available at process.env // env is an obj where we can access env. variables
+//default fallback 3000
 
 //define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -143,6 +145,6 @@ app.get('*', (req, res) => {
 // })
 
 
-app.listen(3000, () => {   //starts up the server
-    console.log('Server is running on port 3000.')
+app.listen(port, () => {   //starts up the server
+    console.log('Server is running on port ' + port)
 })
